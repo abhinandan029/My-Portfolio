@@ -27,6 +27,18 @@ h2{
   color: white;
 }
 
+#email {
+  width : 80%;
+  margin : 5px;
+  border-radius : 10px;
+  padding : 10px 10px;
+  font-size : 18px;
+  border : 1px hsl(0, 0%, 10%, 0.1);
+  background-color : hsl(0, 0%, 10%);
+  margin-bottom : 20px;
+  color: white;
+}
+
 #name:focus{
   outline : 1px solid  hsla(0, 0%, 100%, 0.5);
 }
