@@ -1,0 +1,26 @@
+.Projects{
+  display : flex;
+  flex-direction : column;
+  margin : 50px;
+  border-radius : 15px;
+  border : 1px solid white;
+}
+
+#projectName {
+  padding : 0px 20px;
+}
+
+#description {
+  padding : 0px 30px;
+}
+
+#projectLink{
+  display : flex;
+  align-items : center;
+  font-size : 20px;
+}
+#projectLink a{
+  padding : 0px 10px;
+  font-size : 25px;
+  color : white;
+}

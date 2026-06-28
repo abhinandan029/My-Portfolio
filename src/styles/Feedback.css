@@ -1,0 +1,73 @@
+.form{
+  display :flex;
+  flex-direction : column;
+  align-items : center;
+  padding : 0px 50px 50px 50px;
+  border : 1px solid hsl(0, 0%, 100%, 0.2);
+  border-radius : 15px;
+  margin : 100px;
+  margin-left  : 30%;
+  margin-right  : 30%;
+  background-color : hsl(0, 0%, 5%, 0.5);
+}
+
+h2{
+  margin-bottom : 30px;
+}
+
+#name{
+  width : 80%;
+  margin : 5px;
+  border-radius : 10px;
+  padding : 10px 10px;
+  font-size : 18px;
+  border : 1px hsl(0, 0%, 10%, 0.1);
+  background-color : hsl(0, 0%, 10%);
+  margin-bottom : 20px;
+  color: white;
+}
+
+#name:focus{
+  outline : 1px solid  hsla(0, 0%, 100%, 0.5);
+}
+
+#suggestion {
+  margin : 5px;
+  margin-bottom : 20px;
+  resize : none;
+  border-radius : 10px;
+  padding : 10px 10px;
+  font-size : 18px;
+  border : 1px hsl(0, 0%, 10%, 0.1);
+  background-color : hsl(0, 0%, 10%);
+  color : white;
+}
+
+#suggestion:focus{
+  outline : 1px solid  hsla(0, 0%, 100%, 0.5);
+}
+
+.form button{
+  margin-top : 20px;
+  padding : 5px 20px;
+  font-size : 18px;
+  border-radius : 10px;
+  border : 1px hsl(0, 0%, 10%, 0.1);
+  background-color : hsl(0, 0%, 10%);
+  color : white;
+  transition : transform 0.3s ease-in-out;
+}
+
+button:hover{
+  background-color : hsl(0, 0%, 30%);
+  transform : scale(1.1);
+}
+
+
+label{
+  align-self : flex-start;
+  font-size : 13px;
+  padding : 0px 40px;
+  margin-top : 10px;
+  margin-bottom : 0px;
+}

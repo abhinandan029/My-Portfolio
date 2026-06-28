@@ -1,0 +1,7 @@
+.Footer{
+  border : 1px solid hsl(0, 0%, 20%);
+  margin : 0px;
+  padding : 0px 100px;
+  text-align : center;
+  background-color : hsl(0, 0%, 10%);
+}
