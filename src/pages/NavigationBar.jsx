@@ -8,7 +8,7 @@ function NavigationBar(){
     <div className="NavigationBar">
       <button id="myinfo" ><a href="#MyInfo" id="links">About Me</a></button>
       <button id="projects" ><a href="#Projects" id="links">Projects</a></button>
-      <button id="feedback" >Feedback</button>
+      <button id="feedback" ><a href="#Feedback" id="links">Feedback</a></button>
       <div className="links" >
         <a id="git" onClick={(e) => window.open("https://github.com/Abhinandan029", "_blank", "noopener,noreferrer")} title="GitHub profile">
           <FaGithub/>

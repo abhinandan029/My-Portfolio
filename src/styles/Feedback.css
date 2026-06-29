@@ -1,3 +1,7 @@
+#Feedback{
+  padding : 20px 0px 0px 0px;
+}
+
 .form{
   display :flex;
   flex-direction : column;
@@ -61,8 +65,8 @@ h2{
 
 .form button{
   margin-top : 20px;
-  padding : 5px 20px;
-  font-size : 18px;
+  padding : 5px 30px;
+  font-size : 20px;
   border-radius : 10px;
   border : 1px hsl(0, 0%, 10%, 0.1);
   background-color : hsl(0, 0%, 10%);
