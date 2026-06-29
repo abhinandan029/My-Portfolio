@@ -1,9 +1,14 @@
+#Projects{
+  padding : 50px 100px;
+}
+
 .Projects{
   display : flex;
   flex-direction : column;
   margin : 50px;
   border-radius : 15px;
-  border : 1px solid white;
+  border : 1px solid hsla(0, 0%, 100%, 0.3);
+  background-color : hsla(0, 0%, 30%, 0.2);
 }
 
 #projectName {
@@ -11,16 +16,26 @@
 }
 
 #description {
-  padding : 0px 30px;
+  padding : 0px 70px;
+  font-size : 16px;
 }
 
-#projectLink{
+
+.Projects p{
   display : flex;
   align-items : center;
   font-size : 20px;
+  margin-left : 15px;
 }
-#projectLink a{
-  padding : 0px 10px;
-  font-size : 25px;
+
+#projectLinks{
+  display : flex;
+  padding : 0px 50px;
+  font-size : 30px;
+}
+#projectLinks a{
+  margin-right : 20px;
+  margin-bottom : 5px;
   color : white;
+  cursor : pointer;
 }
