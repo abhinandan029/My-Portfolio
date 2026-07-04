@@ -1,6 +1,7 @@
 import MyImage from '../assets/me.jpeg'
 
-import '../styles/MyInfo.css'
+import '../index.css'
+
 
 function MyInfo(){
 

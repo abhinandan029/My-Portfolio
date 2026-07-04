@@ -1,7 +1,7 @@
 import {useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-import '../styles/Feedback.css'
+import '../index.css'
 
 function Feedback(){
 
@@ -58,7 +58,7 @@ function Feedback(){
         <input id="email" placeholder="Enter your email address" required  value={email} onChange ={(e) => setEmail(e.target.value)}/>
 
         <label htmlFor="suggestion">Suggestion</label>
-        <textarea id="suggestion" placeholder="Provide your suggestion" rows="5" cols="40"  value={message} onChange ={(e) => setMessage(e.target.value)}></textarea>
+        <textarea id="suggestion" placeholder="Provide your suggestion" rows="5"   value={message} onChange ={(e) => setMessage(e.target.value)}></textarea>
 
 
         <button onClick={sendEmail}>{status === "sending" ? "Sending..." : "Send"}</button>
