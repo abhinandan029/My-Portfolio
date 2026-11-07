@@ -1,6 +1,7 @@
 import {useState} from "react"
 
 import Profile from "./Profile"
+import Journey from "./Journey"
 
 export default function WindowDiv(){
 
@@ -40,6 +41,13 @@ export default function WindowDiv(){
         active === "profile" && 
         <div className="h-[95%] p-3 text-black bg-black/85 overflow-y-scroll">
           <Profile />
+        </div>
+      }
+
+      {
+        active === "myjourney" && 
+        <div className="h-[95%] p-3 bg-black/85 overflow-y-scroll">
+          <Journey />
         </div>
       }
 
