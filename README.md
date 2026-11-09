@@ -35,6 +35,26 @@ skills, and projects — with live deployed links and a feedback system.
 - Built a serverless feedback system using EmailJS — no backend needed
 - Designed a clean responsive layout using React component architecture
 
+## Feedback email setup
+
+The feedback form uses EmailJS, so it works on GitHub Pages without a backend.
+
+1. Create an EmailJS service and email template.
+2. Set the following variables in a local `.env` file (use `.env.example` as a
+   starting point):
+
+   ```text
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+
+3. Configure the EmailJS template to include these variables:
+   `{{from_name}}`, `{{feedback_type}}`, and `{{message}}`.
+   Set the template's **To Email** to the address where feedback should arrive.
+4. Add the same variables to the GitHub Actions/deployment environment before
+   running `npm run deploy`.
+
 ---
 
 ## Author

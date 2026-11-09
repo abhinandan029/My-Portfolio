@@ -25,7 +25,7 @@ export default function Projects(){
       name : "ByteForge-Inclusive-Talent-Navigator", 
       description : "This is the project I made to participate in the SAP Hackfest 2026. It was theme based project which mainly solves the problems of companies to keep track of the employee's performance and promotion cycles using our AI agents.", 
       stack : "React, HTML, TailwindCSS, Javascript, FastAPI, Python, AI agents, MCP-server, SAP HANA Database",
-      git : "", 
+      git : "https://github.com/abhinandan029/ByteForge-Inclusive-Talent-Navigator.git", 
       live : ""
     }
   ]
@@ -42,8 +42,8 @@ export default function Projects(){
                 <p className="text-xl">Project Name : <span className="text-red-500">{p.name}</span></p>
                 <p className="text-orange-500 text-[14px] py-2 border-y border-white">{p.description}</p>
                 <p className="text-xl">Tech Stack : <span className="text-green-500">{p.stack}</span></p>
-                <p className="text-xl">Github repo : <span className="text-blue-500 underline"><a href={p.git}>{p.name}</a></span></p>
-                { p.live && <p className="text-xl">Web App : <span className="text-blue-500 underline"><a href={p.live}>{p.name}</a></span></p> }
+                <p className="text-xl">Github repo : <span className="text-blue-500 underline"><a href={p.git} target="_blank">{p.name}</a></span></p>
+                { p.live && <p className="text-xl">Web App : <span className="text-blue-500 underline"><a href={p.live} target="_blank">{p.name}</a></span></p> }
               </div>
             )
           })
