@@ -2,6 +2,9 @@ import {useState} from "react"
 
 import Profile from "./Profile"
 import Journey from "./Journey"
+import Projects from "./Projects"
+import Social from "./Social"
+import Feedback from "./Feedback"
 
 export default function WindowDiv(){
 
@@ -17,7 +20,7 @@ export default function WindowDiv(){
 
   return (
     <div 
-    className="relative h-150 w-200 bg-white m-auto justify-self-center border border-black border-b-15 border-l-15 border-t-5 border-r-5">
+    className="relative h-170 w-250 bg-white m-auto justify-self-center border border-black border-b-15 border-l-15 border-t-5 border-r-5">
 
       <div className="flex flex-row h-[5%] bg-white"  >
         {
@@ -51,6 +54,26 @@ export default function WindowDiv(){
         </div>
       }
 
+      {
+        active === "projects" && 
+        <div className="h-[95%] p-3 bg-black/85 overflow-y-scroll">
+          <Projects />
+        </div>
+      }
+
+      {
+        active === "feedback" && 
+        <div className="h-[95%] p-3 bg-black/85 overflow-y-scroll">
+          <Feedback />
+        </div>
+      }
+
+      {
+        active === "social" && 
+        <div className="h-[95%] p-3 bg-black/85 overflow-y-scroll">
+          <Social />
+        </div>
+      }
       
     </div>
   )
